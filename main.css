@@ -1,0 +1,184 @@
+@charset "UTF-8";
+html *{
+    box-sizing: border-box;
+}
+/*comon*/
+body {
+    background-color: bisque;
+    font-family: sans-serif;
+
+}
+
+h2 {
+    color: brown;
+    font-weight: bold;
+    font-size: 22px;
+    border-bottom: 3px dashed brown;
+}
+
+a:link {
+    color: rgb(8, 8, 8);
+}
+a:visited{
+    color: #0e0d0d;
+}
+a:hover{
+    color: #e3937a;
+}
+a:active{
+    color: #ff6a3b;
+}
+.wrap{
+    margin: 0 auto;
+    width: 80%; 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+}
+
+.container p{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: azure;
+    font-size: 48px ;
+    font-weight: 700 ;
+    text-shadow: 2px 2px 5px grey;
+}
+/*header*/
+h1 {
+    text-align: center;
+    background-image: url(images/burger.png);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0;
+    
+}
+
+nav li{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+
+/*footer*/
+footer {
+    background-image: url(images/footer.png);
+    background-repeat: repeat-x;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+/*index.html*/
+
+
+/*shopinfo*/
+.shopinfo{
+    display: flex;
+}
+.shopinfo img{
+    margin-right: 1em;
+}
+.info {
+    border-collapse: collapse;
+}
+.info th, .info td{
+    padding: 8px;
+    border: 1px solid #973a35;
+    text-align: left;
+}
+.info th{
+    background-color: #ffc7c7;
+    width: 90px;
+    color: #973a35;
+    vertical-align: top;
+}
+/*access*/
+li{
+    list-style-type: none;
+}
+.map{
+    text-align: center;
+}
+/*menu*/
+.menu_item{
+    margin-top: 50px;
+    display: flex;
+}
+.menu_item img{
+    margin-right: 1em;
+}
+/*inquiry*/
+form div{
+    padding: 12px;
+    border-bottom: 1px dashed #973a35;
+}
+select{
+    width: 30em;
+}
+input[name="subject"]
+{
+    width: 30em;
+}
+textarea{
+    width: 30em;
+    height: 6em;
+}
+input[type="submit"]{
+    margin: 20px 0;
+    width: 30em;
+}
+
+/*for smartphone*/
+@media (max-width: 767px){
+    .wrap{
+        width:100%;
+    }
+    h1{
+        margin: 0;
+        padding: 20px;
+        background-position: left bottom;
+        background-size: 15%;
+    }
+    h1 img{
+        width: 200px;
+    }
+    nav{
+        background-color: white;
+    }
+    nav ul{
+        display: block;
+        padding: 20px;
+    }
+    .container p{
+        font-size: 100px;
+        top: 50px;
+        left: 50px;
+    }
+    .shopinfo{
+        display: block;
+    }
+    .shopinfo img{
+        width: 100%;
+        margin-right: 0;
+    }
+    .menu_item{
+        display: block;
+    }
+    select, textarea,
+    input[type="text"],
+    input[type="submit"]{
+        width: 100%;
+    }
+}
